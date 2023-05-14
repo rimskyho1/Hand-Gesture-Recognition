@@ -1,9 +1,9 @@
 This repository contains the following files and folders:
-Hand Gesture Recognition.py
-leapGestRecog
-List of Hand Gestures.png
-README.md
-requirements.txt
+- Hand Gesture Recognition.py
+- leapGestRecog
+- List of Hand Gestures.png
+- README.md
+- requirements.txt
 
 requirements.txt contains Python modules required for this script.
 
@@ -12,7 +12,7 @@ leapGestRecog contains the dataset used for training and testing. It is a Kaggle
 List of Hand Gestures.png is a Matplotlib-generated image showcasing all 10 hand gestures and their labels. 
 
 Hand Gesture Recognition.py is a script that does the following:
-- Reads all of these images as numpy arrays
+- Reads the images in leapGestRecog as numpy arrays
 - Splits them into test and training sets
 - Converts them into TensorFlow tf.data.Dataset format
 - Preprocesses and batches the data
@@ -23,6 +23,6 @@ Hand Gesture Recognition.py is a script that does the following:
 - Loads "hand_recognition_model.h5"
 - Once the capturing window is active, you can make one of the 10 predefined hand gestures (refer to "List of Hand Gestures.png")
 - Works best if your hand is the only visible part of your body and is centred
-- Press "h" to have it make a multiclass classification prediction using the trained model (can be pressed multiple times to repeatedly make new predictions)
+- Press "p" to have it make a multiclass classification prediction using the trained model (can be pressed multiple times to repeatedly make new predictions)
 - If not accurate, try readjusting your hand around in different angles
 - Press "q" to end the OpenCV process
