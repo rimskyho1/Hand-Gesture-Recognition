@@ -1,9 +1,9 @@
 This repository contains the following files and folders:
-Hand Gesture Recognition.py
-leapGestRecog
-List of Hand Gestures.png
-README.md
-requirements.txt
+- Hand Gesture Recognition.py
+- leapGestRecog
+- List of Hand Gestures.png
+- README.md
+- requirements.txt
 
 requirements.txt contains Python modules required for this script.
 
