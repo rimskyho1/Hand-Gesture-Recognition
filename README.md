@@ -12,7 +12,7 @@ leapGestRecog contains the dataset used for training and testing. It is a Kaggle
 List of Hand Gestures.png is a Matplotlib-generated image showcasing all 10 hand gestures and their labels. 
 
 Hand Gesture Recognition.py is a script that does the following:
-- Reads all of these images as numpy arrays
+- Reads the images in leapGestRcog as numpy arrays
 - Splits them into test and training sets
 - Converts them into TensorFlow tf.data.Dataset format
 - Preprocesses and batches the data
