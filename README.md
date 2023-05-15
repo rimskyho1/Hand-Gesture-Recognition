@@ -1,9 +1,23 @@
 This repository contains the following files and folders:
+- Dataloader.py
 - Hand Gesture Recognition.py
 - leapGestRecog
 - List of Hand Gestures.png
+- Model_Test.py
+- Model_Training.py
+- Preprocessor.py
 - README.md
 - requirements.txt
+
+
+Instructions:
+- Install the modules in requirements.txt
+- Run Hand Gesture Recognition.py and let it read the dataset, train a model, and open the webcam to test the model
+- Once the capturing window is active, you can make one of the 10 predefined hand gestures (refer to "List of Hand Gestures.png")
+- Works best if your hand is the only visible part of your body and is centred
+- Press "p" to have it make a multiclass classification prediction using the trained model (can be pressed multiple times to repeatedly make new predictions)
+- If not accurate, try readjusting your hand around in different angles
+- Press "q" to end the OpenCV process
 
 requirements.txt contains Python modules required for this script.
 
@@ -11,18 +25,13 @@ leapGestRecog contains the dataset used for training and testing. It is a Kaggle
 
 List of Hand Gestures.png is a Matplotlib-generated image showcasing all 10 hand gestures and their labels. 
 
-Hand Gesture Recognition.py is a script that does the following:
-- Reads the images in leapGestRecog as numpy arrays
-- Splits them into test and training sets
-- Converts them into TensorFlow tf.data.Dataset format
-- Preprocesses and batches the data
-- Trains a sequential model on the data using Keras 
-- Evaluates and visualises the results
-- Saves the model as "hand_recognition_model.h5" in the same directory
-- Uses OpenCV to open a capturing window with a camera
-- Loads "hand_recognition_model.h5"
-- Once the capturing window is active, you can make one of the 10 predefined hand gestures (refer to "List of Hand Gestures.png")
-- Works best if your hand is the only visible part of your body and is centred
-- Press "p" to have it make a multiclass classification prediction using the trained model (can be pressed multiple times to repeatedly make new predictions)
-- If not accurate, try readjusting your hand around in different angles
-- Press "q" to end the OpenCV process
+Dataloader.py contains a function to read the dataset as numpy arrays.
+
+Preprocessor.py contains a function to preprocess the dataset and split it into train and test sets.
+
+Model_Training.py contains a function to create and train a model based on the td.data.Dataset.
+
+Model_Test.py contains a function to load the model, open the webcam with OpenCV, and make predictions with it.
+
+Hand Gesture Recognition.py contains a code to import and run all of the aforementioned scripts. 
+
