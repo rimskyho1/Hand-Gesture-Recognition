@@ -12,8 +12,8 @@ This repository contains the following files and folders:
 
 Instructions:
 - Install the modules in requirements.txt
-- Run Hand Gesture Recognition.py and let it read the dataset, train a model, and open the webcam to test the model
-- Once the capturing window is active, you can make one of the 10 predefined hand gestures (refer to "List of Hand Gestures.png")
+- Run Hand Gesture Recognition.py and it will proceed to read the dataset, train a model, and automatically turn on the webcam to test the model
+- Make the webcam capturing window your active (frontmost) window; afterwards, you can make one of the 10 predefined hand gestures (refer to "List of Hand Gestures.png" for a guide)
 - Works best if your hand is the only visible part of your body and is centred
 - Press "p" to have it make a multiclass classification prediction using the trained model (can be pressed multiple times to repeatedly make new predictions)
 - If not accurate, try readjusting your hand around in different angles
@@ -25,13 +25,13 @@ leapGestRecog contains the dataset used for training and testing. It is a Kaggle
 
 List of Hand Gestures.png is a Matplotlib-generated image showcasing all 10 hand gestures and their labels. 
 
-Dataloader.py contains a function to read the dataset as numpy arrays.
+Dataloader.py contains a function to read the dataset as numpy arrays. Can be executed independently.
 
-Preprocessor.py contains a function to preprocess the dataset and split it into train and test sets.
+Preprocessor.py contains a function to preprocess the dataset and split it into train and test sets. Cannot be executed independently by itself.
 
-Model_Training.py contains a function to create and train a model based on the td.data.Dataset.
+Model_Training.py contains a function to create and train a model based on the td.data.Dataset. Cannot be executed independently by itself.
 
-Model_Test.py contains a function to load the model, open the webcam with OpenCV, and make predictions with it.
+Model_Test.py contains a function to load the model, open the webcam with OpenCV, and make predictions with it. Can be executed independently.
 
-Hand Gesture Recognition.py contains a code to import and run all of the aforementioned scripts. 
+Hand Gesture Recognition.py contains the main code to import and run all of the aforementioned scripts in order. 
 
